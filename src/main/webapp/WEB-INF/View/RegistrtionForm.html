@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Bank Appliction</title>
+<link rel="stylesheet" href="reg.css">
+</head>
+<body>
+<h1>Registration Form</h1>
+<form action="register.do" >	
+	<fieldset>
+		<legend>Personal Details : </legend>
+		<table>
+			<tr><td><label><font size="4">Customer Name :</font> </label></td>
+				<td><input type="text" id="li" list="list1" placeholder="--Select--" size="6" required="required"> 
+					<datalist id="list1">
+						<option value="Mr." selected="selected"></option>
+						<option value="Miss."></option>
+						<option value="Mrs."></option>
+					</datalist>
+					<input type="text" id="firstname" placeholder="First Name" required="required">
+				<input type="text" id="middlename" placeholder="Middle Name" required="required">
+				<input type="text" id="lastname" placeholder="Last Name" required="required">
+				</td>
+				
+			</tr>
+			<tr></tr>
+			<tr></tr>
+			<tr></tr>
+			<tr><td><label><font size="4">Email Address:</font></label></td>
+				<td><input type="email" id="uemail" required placeholder="e.g.,user@domain.com"></td>
+			</tr>
+			
+			<tr></tr>
+			<tr></tr>
+			<tr></tr>
+			
+			<tr><td><label><font size="4">Date of Birth:</font> </label></td>
+				<td><input type="date" id="udate"></td>
+			</tr>
+			
+			<tr></tr>
+			<tr></tr>
+			<tr></tr>
+			<tr><td><label><font size="4">Gender:</font></label></td>
+				<td>
+				<select name="dropdown" required="required">
+					<option value="Male" selected>Male</option>
+					<option value="Female">Female</option>
+				</select>
+				</td>
+			</tr>
+			
+			<tr></tr>
+			<tr></tr>
+			<tr></tr>
+			<tr><td><label><font size="4">Nationality:</font></label></td>
+				<td>
+				<select name="dropdown" required="required">
+					<option value="Indian" selected>Indian</option>
+					<option value="USA">USA</option>
+					<option value="UK">UK</option>
+				</select>
+				</td>
+			</tr>
+			
+			<tr></tr>
+			<tr></tr>
+			<tr></tr>
+			<tr><td><label><font size="4">Country Name: </font></label></td>
+				<td><input type="text" id="cname" required="required"></td>
+			</tr>
+			
+			<tr></tr>
+			<tr></tr>
+			<tr></tr>
+			<tr><td><label><font size="4">UID:</font> </label></td>
+				<td><input type="text" name="uid" pattern="[0-9]" required="required"></td>
+			</tr>
+		</table>
+	</fieldset>
+	
+	<table>
+		<tr></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr></tr>
+	</table>
+	
+	<fieldset>
+		<legend>Address Details: </legend>
+		<table>
+			<tr><td><label><font size="4">Address Type :</font></label></td>
+				<td>
+				<select name="dropdown" required="required">
+					<option value="Select">--Select--</option>
+					<option value="Residential">Residential</option>
+					<option value="Buisness">Buisness</option>
+					<option value="Registered Office">Registered Office</option>
+					<option value="Unspecified">Unspecified</option>
+				</select>
+				</td>
+			</tr>
+			
+		</table>
+		<table>
+			<tr><td><input type="text" id="flat_no" placeholder="Door/FlatNo;Building/Society" required="required" size="50"></td></tr>
+			<tr><td><input type="text" id="Street" placeholder="Street/RoadName" required="required" size="50"></td></tr>
+			
+			<tr></tr>
+			<tr></tr>
+			<tr></tr>
+			
+		</table>
+		
+		<table>
+		<tr>
+			<td><label><font size="4">District : </font></label><input type="text" id="District" required="required"></td>
+			
+		</tr>
+		<tr></tr>
+			<tr></tr>
+			<tr></tr>
+		<tr>
+			<td><label><font size="4">State : </font></label><input type="text" id="state" required="required"></td>
+			<td><label><font size="4">PIN :</font><input type="text" name="pin" pattern="[0-9]"></label></td>
+		</tr>
+		
+		<tr></tr>
+			<tr></tr>
+			<tr></tr>
+		<tr>
+			<td><label><font size="4">Mobile No. : </font></label><input id="st" value="+91" size="2"><input type="text" name="mob" pattern="[0-9]"></td>
+			<td><label><font size="4">Country Name : </font></label><input type="text" id="con"></td>
+		</tr>
+		
+		<tr></tr>
+			<tr></tr>
+			<tr></tr>
+			<tr></tr>
+			<tr></tr>
+			<tr></tr>
+		</table>
+	
+		
+	</fieldset>
+	<table>
+		<tr></tr>
+			<tr></tr>
+			<tr></tr>
+	</table>
+	
+	
+	<input type="submit" value="Submit"/>
+	
+</form>
+
+</body>
+</html>
