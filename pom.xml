@@ -11,6 +11,7 @@
   <properties>
 		<spring.version>4.3.3.RELEASE</spring.version>
 		<cglib.version>2.2.2</cglib.version>
+		<jdk>1.7</jdk>
   </properties>
   
   <dependencies>
@@ -182,6 +183,15 @@
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
+			 <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.6.0</version>
+				<configuration>
+				  <source>${jdk}</source>
+				  <target>${jdk}</target>
+				</configuration>
+			  </plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
