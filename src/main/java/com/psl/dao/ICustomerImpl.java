@@ -14,22 +14,16 @@ import com.psl.bean.Customer;
 public class ICustomerImpl implements ICustomer {
 	@Autowired
 	JdbcTemplate template;
-
 	public void addCustomer(Customer cust) {
 		/*template.update("insert into customer values(" + cust.getId() + ",'"
 				+ cust.getName() + "')"
 
 		);*/
 	}
-
 	public void addUser(String user, String password) {
 		template.update("insert into userlog values('"+user+"','"+password+"')");
 	}
-
-	public List<Customer> getAllCustomers() {
-		
-//		System.out.println("in allcustomers");
-		
+	public List<Customer> getAllCustomers() {			
 		String sql = "select * from customer";
 		return template.query(sql, new RowMapper<Customer>(){
 
@@ -41,5 +35,4 @@ public class ICustomerImpl implements ICustomer {
 			}			
 		});
 	}
-
 }

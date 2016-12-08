@@ -1,17 +1,13 @@
 package com.psl.bean;
 
 public class Address {
-
 	private String street;
 	private String city;
 	private String state;
 	private int zip;
 	private String country;
-	
 	public Address() {
-		// TODO Auto-generated constructor stub
 	}
-
 	public Address(String street, String city, String state, int zip,
 			String country) {
 		super();
@@ -21,7 +17,6 @@ public class Address {
 		this.zip = zip;
 		this.country = country;
 	}
-
 	public String getStreet() {
 		return street;
 	}

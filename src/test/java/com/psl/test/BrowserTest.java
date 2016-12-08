@@ -1,45 +1,25 @@
 package com.psl.test;
 
-import java.util.concurrent.TimeUnit;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class BrowserTest {
-	
-	WebDriver driver;
-	
-	@Before
-	public void setUpFirefox(){
-		
-		driver = new FirefoxDriver();
-//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	}
-	
-	
-	@Test()
-	public void firefoxTest() throws InterruptedException{
+	WebDriver firefox;
 
-		 driver.get("http://localhost:8080/BankApp/home");
-		 
-		
+	@Before
+	public void setUpFirefox() {
+		firefox = new FirefoxDriver();
 	}
-	
-	@After 
-	public void closeFirefox(){
-		driver.close();
-		driver.quit();
+	@Test()
+	public void firefoxTest() throws InterruptedException {
+		firefox.get("http://localhost:8080/BankApp/");
 	}
-	
-	/*@Test()
-	public void chromeTest() throws InterruptedException{
-		System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
-		WebDriver w1=new InternetExplorerDriver();
-//		w1.get("website url");
-	}*/
+	@After
+	public void closeFirefox() {
+		firefox.close();
+		firefox.quit();
+	}
 }
