@@ -14,9 +14,8 @@ public class MainController {
 
 	@Autowired
 	DaoService  service;
-	
-	
-	@RequestMapping(value = {"/", "/addCust" }, method = RequestMethod.GET)
+		
+	@RequestMapping(value = {"/addCust" }, method = RequestMethod.GET)
 	public String addCust(Model model){
 		System.out.println("Inside form");
 		model.addAttribute("customer", new Customer());
@@ -37,7 +36,7 @@ public class MainController {
 		return "redirect:home";
 	}
 	
-	@RequestMapping(value = { "/","/register/{username}/{password}" }, method = RequestMethod.GET)
+	@RequestMapping(value = {"/register/{username}/{password}" }, method = RequestMethod.GET)
 	public String getOrder(@PathVariable String username,@PathVariable String password,Model model){
 			System.out.println(username+"call");
 			//model.addAttribute("orderId", username.toString());
@@ -47,7 +46,7 @@ public class MainController {
 	
 
 	
-	@RequestMapping(value = { "/", "/login" }, method = RequestMethod.GET)
+	@RequestMapping(value = { "/login" }, method = RequestMethod.GET)
 	public String getUserLogin(Model model){
 			//System.out.println(username+"call");
 			

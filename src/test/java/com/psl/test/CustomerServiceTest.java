@@ -95,7 +95,7 @@ public class CustomerServiceTest {
 	//...........................................................................	
 	
 	
-	@Test
+	//@Test
 	public void testAddCustomer(){
 		
 //		Customer cust =null;

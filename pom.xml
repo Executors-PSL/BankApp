@@ -1,4 +1,231 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.psl</groupId>
+  <artifactId>BankApp</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>BankApp Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  
+  <properties>
+		<spring.version>4.3.3.RELEASE</spring.version>
+		<cglib.version>2.2.2</cglib.version>
+  </properties>
+  
+  <dependencies>
+    	<dependency>
+      		<groupId>junit</groupId>
+      		<artifactId>junit</artifactId>
+      		<version>4.11</version>
+      		<scope>test</scope>   	
+    	</dependency>
+ 
+ 		<dependency>
+    		<groupId>mysql</groupId>
+    		<artifactId>mysql-connector-java</artifactId>
+    		<version>5.1.27</version>
+		</dependency>
+     
+     	<dependency>
+        	<groupId>org.seleniumhq.selenium</groupId>
+        	<artifactId>selenium-java</artifactId>
+        	<version>3.0.1</version>
+    	</dependency>
+     
+    	<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+ 
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+ 
+ 		<dependency>
+    		<groupId>jstl</groupId>
+    		<artifactId>jstl</artifactId>
+    		<version>1.2</version>
+		</dependency>
+ 
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+	
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+	
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${spring.version}</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+
+		
+	
+		<dependency>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-jdbc</artifactId>
+    		<version>${spring.version}</version>
+		</dependency>
+<!--......................dependencies added for unit testing.........................................................-->
+
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib-nodep</artifactId>
+			<version>${cglib.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		
+		<dependency>
+    		<groupId>org.seleniumhq.selenium</groupId>
+    		<artifactId>selenium-firefox-driver</artifactId>
+   			 <version>2.53.0</version>
+		</dependency>
+
+		<dependency>
+    		<groupId>org.seleniumhq.selenium</groupId>
+   			<artifactId>selenium-ie-driver</artifactId>
+    		<version>2.44.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.4</version>
+			<scope>provided</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.1</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+    		<groupId>org.mockito</groupId>
+    		<artifactId>mockito-all</artifactId>
+    		<version>1.9.5</version>
+    		<scope>test</scope>
+		</dependency>
+		<dependency>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-test</artifactId>
+    		<version>3.2.3.RELEASE</version>
+    		<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>1.9.5</version>
+			<scope>test</scope>
+		</dependency>
+
+<!--..................end of dependencies added for unit testing.........................................................-->
+</dependencies>
+<!-- .....................maven profiles................................ -->
+<profiles>
+	
+	
+	<profile>
+			<id>build_uk</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<db.driverClass>com.mysql.jdbc.Driver</db.driverClass>
+				<db.connectionURL>jdbc:mysql://localhost:3306/tech</db.connectionURL>
+				<db.username>root</db.username>
+				<db.password>root</db.password>
+				<cimage>./resources/images/back1.jpg</cimage>
+			</properties>
+		</profile>
+		<profile>
+			<id>build_ind</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<properties>
+				<db.driverClass>com.mysql.jdbc.Driver</db.driverClass>
+				<db.connectionURL>jdbc:mysql://localhost:3306/test</db.connectionURL>
+				<db.username>root</db.username>
+				<db.password>root</db.password>
+				<!-- <cimage>https://www.omsoftware.net/uploads/posting_images/ca8858fe244fb706d158962b145c0223.jpg</cimage> -->
+				<cimage>./resources/images/taj.png</cimage>
+			</properties>
+		</profile>
+	
+</profiles>
+<!-- ......................end of maven profiles............................... -->
+
+
+
+<build>
+	<!-- .......................plugins for maven profiles.............................. -->
+	<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.3</version>
+				<configuration>
+					<webResources>
+						<resource>
+							<filtering>true</filtering>
+							<directory>src/main/webapp</directory>
+							<includes>
+								<!-- <include>**/*.xml</include> -->
+								
+								<!-- include any other file types you want to filter -->
+							</includes>
+						</resource>
+					</webResources>
+				</configuration>
+			</plugin>
+		</plugins>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
+				<include>**/*.properties</include>
+				</includes>
+				
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+	<!-- .........................end of plugins for maven profiles............................ -->
+	
+ <finalName>BankApp</finalName>
+</build>
+</project>
+
+
+
+
+
+
+
+
+
+<!-- <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.psl</groupId>
@@ -78,19 +305,14 @@
 			<version>3.2.3.RELEASE</version>
 			<scope>test</scope>
 		</dependency>
-			
-			
-			
-			<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>2.5</version>
-		</dependency>
-			
-			
-			
+
 	</dependencies>
-	<!-- profiles..... -->
+	profiles.....
+
+
+
+
+
 	<build>
 		<finalName>BankApp</finalName>
 
@@ -103,25 +325,19 @@
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
-			
-			<plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.0</version>
-      </plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
-				<version>2.3</version>
+				<version>2.0.2</version>
 				<configuration>
 					<webResources>
 						<resource>
 							<filtering>true</filtering>
 							<directory>src/main/webapp</directory>
 							<includes>
-								<!-- <include>**/*.xml</include> -->
+								<include>**/*.xml</include>
 
-								<!-- include any other file types you want to filter -->
+								include any other file types you want to filter
 							</includes>
 						</resource>
 					</webResources>
@@ -171,9 +387,10 @@
 				<db.connectionURL>jdbc:mysql://localhost:3306/test</db.connectionURL>
 				<db.username>root</db.username>
 				<db.password>root</db.password>
-				<!-- <cimage>https://www.omsoftware.net/uploads/posting_images/ca8858fe244fb706d158962b145c0223.jpg</cimage> -->
+				<cimage>https://www.omsoftware.net/uploads/posting_images/ca8858fe244fb706d158962b145c0223.jpg</cimage>
 				<cimage>./resources/images/taj.png</cimage>
 			</properties>
 		</profile>
 	</profiles>
 </project>
+ -->
