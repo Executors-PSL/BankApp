@@ -33,6 +33,7 @@ public class BrowserTest {
 	@After 
 	public void closeFirefox(){
 		driver.close();
+		driver.quit();
 	}
 	
 	/*@Test()
