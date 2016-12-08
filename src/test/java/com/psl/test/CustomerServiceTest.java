@@ -22,6 +22,8 @@ public class CustomerServiceTest {
 	
 	@Test
 	public void testingAddCustomer(){
+	
+		System.out.println("Java version **** "+ System.getProperty("java.version"));
 		
 //		Customer cust = new Customer();
 //		cust.setFirstName("mpc");
