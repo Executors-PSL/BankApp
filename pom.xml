@@ -122,7 +122,7 @@
 				<db.connectionURL>jdbc:mysql://localhost:3306/tech</db.connectionURL>
 				<db.username>root</db.username>
 				<db.password>root</db.password>
-				<cimage>./resources/images/back1.jpg</cimage>
+				<cimage>./resources/images/london_eye.jpg</cimage>
 			</properties>
 		</profile>
 		<profile>
@@ -135,8 +135,20 @@
 				<db.connectionURL>jdbc:mysql://localhost:3306/test</db.connectionURL>
 				<db.username>root</db.username>
 				<db.password>root</db.password>
-				<!-- <cimage>https://www.omsoftware.net/uploads/posting_images/ca8858fe244fb706d158962b145c0223.jpg</cimage> -->
 				<cimage>./resources/images/taj.png</cimage>
+			</properties>
+		</profile>
+				<profile>
+			<id>build_us</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<properties>
+				<db.driverClass>com.mysql.jdbc.Driver</db.driverClass>
+				<db.connectionURL>jdbc:mysql://localhost:3306/buildus</db.connectionURL>
+				<db.username>root</db.username>
+				<db.password>root</db.password>
+				<cimage>./resources/images/us.png</cimage>
 			</properties>
 		</profile>
 
@@ -173,7 +185,6 @@
 							<directory>src/main/webapp</directory>
 							<includes>
 								<!-- <include>**/*.xml</include> -->
-
 								<!-- include any other file types you want to filter -->
 							</includes>
 						</resource>
