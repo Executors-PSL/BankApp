@@ -97,7 +97,7 @@
 								<li><a href="#">HTML5</a></li>
 								<li><a href="#">CSS3</a></li>
 								<li><a href="#">Sass</a></li>
-								<li><a href="#">jQuery</a></li>   
+								<li><a href="#">jQuery</a></li>       
 							</ul>
 						</li>
 						<li><a href="http://localhost:8080/BankApp/login">Login</a></li>
