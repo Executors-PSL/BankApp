@@ -16,7 +16,7 @@
 	<!-- Modernizr JS -->
 	<script src="./resources/js/modernizr-2.6.2.min.js"></script>
 	<script>
-	        
+	               
 	 function loadXMLDoc()
      {
        var xmlhttp;
@@ -94,9 +94,9 @@
 						<li class="has-dropdown">
 							<a href="#">Dropdown</a>     	    
 							<ul class="dropdown">
-								<li><a href="#">HTML5</a></li>
-								<li><a href="#">CSS3</a></li>
-								<li><a href="#">Sass</a></li>
+								<li><a href="#">Shubham</a></li>
+								<li><a href="#">AJit</a></li>
+								<li><a href="#">Poonam</a></li>
 								<li><a href="#">jQuery</a></li>       
 							</ul>    
 						</li>
