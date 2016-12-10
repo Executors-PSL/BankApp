@@ -148,7 +148,7 @@
 				<db.connectionURL>jdbc:mysql://localhost:3306/buildus</db.connectionURL>
 				<db.username>root</db.username>
 				<db.password>root</db.password>
-				<cimage>./resources/images/us.png</cimage>
+				<cimage>./resources/images/us.jpg</cimage>
 			</properties>
 		</profile>
 
