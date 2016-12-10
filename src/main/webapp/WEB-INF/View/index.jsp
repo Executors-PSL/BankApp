@@ -97,8 +97,8 @@
 								<li><a href="#">Shubham</a></li>
 								<li><a href="#">Ajit</a></li>
 								<li><a href="#">Poonam</a></li>
-								<li><a href="#">DevOps</a></li> 
-								<li><a href="#">Team Executors</a></li> 
+								
+								
 								
 							</ul>          
 						</li>
