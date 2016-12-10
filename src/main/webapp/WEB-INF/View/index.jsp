@@ -16,7 +16,7 @@
 	<!-- Modernizr JS -->
 	<script src="./resources/js/modernizr-2.6.2.min.js"></script>
 	<script>
-	   
+	      
 	 function loadXMLDoc()
      {
        var xmlhttp;
@@ -85,7 +85,7 @@
 						<li class="has-dropdown">
 							<a href="services.html">Services</a>
 							<ul class="dropdown">
-								<li><a href="#">Web Design</a></li>
+								
 								<li><a href="#">eCommerce</a></li>
 								<li><a href="#">Branding</a></li>
 								<li><a href="#">API</a></li>
