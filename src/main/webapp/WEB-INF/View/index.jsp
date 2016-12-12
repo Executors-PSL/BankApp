@@ -94,10 +94,10 @@
 						<li class="has-dropdown">
 							<a href="#">Dropdown</a>     	    
 							<ul class="dropdown">
-								<li><a href="#">HTML5</a></li>
-								<li><a href="#">CSS3</a></li>
-								<li><a href="#">Sass</a></li>
-								<li><a href="#">jQuery</a></li>       
+								<li><a href="#">Shubham</a></li>
+								<li><a href="#">Poonam</a></li>
+								<li><a href="#">Ajit</a></li>
+						<!--	<li><a href="#">DevOps</a></li> -->       
 							</ul>    
 						</li>
 						<li><a href="http://localhost:8080/BankApp/login">Login</a></li>
