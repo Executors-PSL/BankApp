@@ -13,7 +13,7 @@ public class BrowserTest {
 
 	@Before
 	public void setUpFirefox() {
-		firefox = new FirefoxDriver();
+		firefox = new FirefoxDriver(); 
 	}
 	@Test()
 	public void firefoxTest() throws InterruptedException {
