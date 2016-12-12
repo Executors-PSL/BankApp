@@ -94,7 +94,7 @@
 						<li class="has-dropdown">
 							<a href="#">Dropdown</a>     	    
 							<ul class="dropdown">
-								<li><a href="#">Shubham Yannawar</a></li>
+								<li><a href="#">Shubham Y</a></li>
 								<li><a href="#">Poonam</a></li>
 								<li><a href="#">Ajit</a></li>
 						<!--		<li><a href="#">DevOps</a></li> -->
