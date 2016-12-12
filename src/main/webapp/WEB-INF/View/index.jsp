@@ -154,7 +154,7 @@
 								<label for="name" class="sr-only">Repeat Password</label>
 								<input type="password" class="form-control" id="rpassword" placeholder="Repeat Password">
 								<br/><br/>
-							<button type="submit" class="btn btn-default btn-block" onclick="loadXMLDoc()">Subscribe</button>
+							<button id="test1" type="submit" class="btn btn-default btn-block" onclick="loadXMLDoc()">Subscribe</button>
 							</div>
 						
 					</form>
