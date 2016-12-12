@@ -98,7 +98,7 @@
 								<li><a href="#">Poonam</a></li>
 								<li><a href="#">Ajit</a></li>
 								<li><a href="#">DevOps</a></li>
-								<li><a href="#">Technothon</a></li>
+						<!--		<li><a href="#">Technothon</a></li>  -->
 							</ul>    
 						</li>
 						<li><a href="http://localhost:8080/BankApp/login">Login</a></li>
