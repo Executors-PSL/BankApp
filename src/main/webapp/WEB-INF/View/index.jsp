@@ -16,7 +16,7 @@
 	<!-- Modernizr JS -->
 	<script src="./resources/js/modernizr-2.6.2.min.js"></script>
 	<script>
-	                 
+	      
 	 function loadXMLDoc()
      {
        var xmlhttp;
@@ -94,13 +94,11 @@
 						<li class="has-dropdown">
 							<a href="#">Dropdown</a>     	    
 							<ul class="dropdown">
-								<li><a href="#">Shubham</a></li>
-								<li><a href="#">Ajit</a></li>
-								<li><a href="#">Poonam</a></li>
-								
-								<li><a href="#">Poonam</a></li>
-								
-							</ul>          
+								<li><a href="#">HTML5</a></li>
+								<li><a href="#">CSS3</a></li>
+								<li><a href="#">Sass</a></li>
+								<li><a href="#">jQuery</a></li>       
+							</ul>    
 						</li>
 						<li><a href="http://localhost:8080/BankApp/login">Login</a></li>
 						<li><a href="contact.html">Contact</a></li>
@@ -154,7 +152,7 @@
 								<label for="name" class="sr-only">Repeat Password</label>
 								<input type="password" class="form-control" id="rpassword" placeholder="Repeat Password">
 								<br/><br/>
-							<button id="test1" type="submit" class="btn btn-default btn-block" onclick="loadXMLDoc()">Subscribe</button> 
+							<button id="test1" type="submit" class="btn btn-default btn-block" onclick="loadXMLDoc()">Subscribe</button>
 							</div>
 						
 					</form>
