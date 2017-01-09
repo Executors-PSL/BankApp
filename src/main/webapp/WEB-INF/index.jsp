@@ -48,7 +48,7 @@
         	   /*  document.getElementById("myDiv").innerHTML=xmlhttp.responseText;*/ 
            }
        }
-
+                                                               
        xmlhttp.open("GET", url, true);
        xmlhttp.send();
        alert("registered");
