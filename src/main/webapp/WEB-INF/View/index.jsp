@@ -97,6 +97,8 @@
 								<li><a href="#">Home Loan</a></li>
 								<li><a href="#">Car Loan</a></li>
 								<li><a href="#">Gold Loan</a></li>
+								<li><a href="#">Educational Loan</a></li>
+
 							</ul>    
 						</li>
 						<li><a href="http://localhost:8080/BankApp/login">Login</a></li>
