@@ -92,13 +92,11 @@
 							</ul>
 						</li>
 						<li class="has-dropdown">
-							<a href="#">Dropdown</a>     	    
+							<a href="#">Loan</a>     	    
 							<ul class="dropdown">
-								<li><a href="#">ShubhaM</a></li>
-								<li><a href="#">Poonam</a></li>
-								<li><a href="#">Ajit</a></li>
-						<!--		<li><a href="#">DevOps</a></li> -->
-						<!--		<li><a href="#">Technothon</a></li>  -->
+								<li><a href="#">Home Loan</a></li>
+								<li><a href="#">Car Loan</a></li>
+								<li><a href="#">Gold Loan</a></li>
 							</ul>    
 						</li>
 						<li><a href="http://localhost:8080/BankApp/login">Login</a></li>
